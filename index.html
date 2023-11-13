@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website HTML CSS JS | Made by Mike</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="main">
+        <header class="header">
+            <a href="#" class="logo">QUIZ GAME</a>
+
+            <nav class="navbar">
+                <a href="#">Trung học cơ sở Nguyễn Lân</a>
+            </nav>
+        </header>
+
+        <div class="container">
+            <section class="quiz-section">
+                <div class="quiz-box">
+                    <h1>Quiz GAME</h1>
+                    <div class="quiz-header">
+                        <span>Điểm của bạn ở đây -></span>
+                        <span class="header-score">Điểm: 0 / 10</span>
+                    </div>
+
+                    <h2 class="question-text">What does HTML stand for?</h2>
+
+                    <div class="option-list">
+                        <!-- <div class="option">
+                            <span>A. Hyper Type Multi Language</span>
+                        </div>
+                        <div class="option">
+                            <span>B. Hyper Text Multiple Language</span>
+                        </div>
+                        <div class="option">
+                            <span>C. Hyper Text Markup Language</span>
+                        </div>
+                        <div class="option">
+                            <span>D. Home Text Multi Language</span>
+                        </div> -->
+                    </div>
+
+                    <div class="quiz-footer">
+                        <span class="question-total">1 of 10 Questions</span>
+                        <button class="next-btn">Tiếp</button>
+                    </div>
+                </div>
+
+                <div class="result-box">
+                    <h2>Kết quả!</h2>
+                    <div class="percentage-container">
+                        <div class="circular-progress">
+                            <span class="progress-value">0%</span>
+                        </div>
+
+                        <span class="score-text">Your Score 0 out of 10</span>
+                    </div>
+
+                    <div class="buttons">
+                        <button class="tryAgain-btn">Thử lại</button>
+                        <button class="goHome-btn">Quay về màn hình chính</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="home">
+                <div class="home-content">
+                    <h1>Đố vui</h1>
+                    <p>“Mục tiêu của giáo dục không phải là dạy cách kiếm sống hay cung cấp công cụ để đạt được sự giàu có, mà đó phải là con đường dẫn lối tâm hồn con người vươn đến cái Chân và thực hành cái Thiện”. Vijaya Lakshmi Pandit</p>
+                    <button class="start-btn">Bắt đầu</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="popup-info">
+        <h2>Hướng dẫn</h2>
+        <span class="info">1. Chọn đáp án đúng trong 5 đáp án.</span>
+        <span class="info">2. Mỗi câu chỉ được chọn 1 đáp án.</span>
+        <span class="info">3. Ấn "Tiếp" để chuyển sang câu tiếp theo.</span>
+        <span class="info">4. Nhấn "Thử lại" để làm lại bài.</span>
+        <span class="info">5. Nhấn "Quay về màn hình chính" để quay về màn hình chính.</span>
+
+        <div class="btn-group">
+            <button class="info-btn exit-btn">Thoát</button>
+            <a href="#" class="info-btn continue-btn">Tiếp tục</a>
+        </div>
+    </div>
+
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
