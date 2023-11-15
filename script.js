@@ -9,6 +9,36 @@ const resultBox = document.querySelector('.result-box');
 const tryAgainBtn = document.querySelector('.tryAgain-btn');
 const goHomeBtn = document.querySelector('.goHome-btn');
 
+// Biến global để lưu trữ tên người chơi
+let playerName = "";
+
+// Hàm cập nhật hiển thị tên người chơi
+function updatePlayerNameDisplay() {
+    const playerNameDisplay = document.getElementById('playerNameDisplay');
+    playerNameDisplay.textContent = `Người chơi: ${playerName}`;
+}
+
+// Sự kiện khi người chơi nhập tên
+const playerNameInput = document.getElementById('playerName');
+
+playerNameInput.addEventListener('input', (event) => {
+    playerName = event.target.value;
+    updatePlayerNameDisplay();
+});
+
+// Hàm được gọi khi trang web được tải
+window.onload = () => {
+    retrievePlayerInfoFromLocal();
+    displayPlayerInfo(); // Hiển thị thông tin người chơi
+
+    const playerNameInput = document.getElementById('playerName');
+
+    playerNameInput.addEventListener('input', (event) => {
+        playerName = event.target.value;
+        updatePlayerNameDisplay();
+    });
+}
+
 startBtn.onclick = () => {
     popupInfo.classList.add('active');
     main.classList.add('active');
@@ -160,3 +190,4 @@ function showResultBox() {
         }
     }, speed);
 }
+
