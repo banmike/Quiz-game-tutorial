@@ -18,6 +18,7 @@
             <nav class="navbar">
                 <a href="#">Trung học cơ sở Nguyễn Lân</a>
             </nav>
+
         </header>
 
         <div class="container">
@@ -25,7 +26,7 @@
                 <div class="quiz-box">
                     <h1>Quiz GAME</h1>
                     <div class="quiz-header">
-                        <span>Điểm của bạn ở đây -></span>
+                        <div id="playerNameDisplay" class="player-name-display"></div>
                         <span class="header-score">Điểm: 0 / 10</span>
                     </div>
 
@@ -86,6 +87,9 @@
         <span class="info">3. Ấn "Tiếp" để chuyển sang câu tiếp theo.</span>
         <span class="info">4. Nhấn "Thử lại" để làm lại bài.</span>
         <span class="info">5. Nhấn "Quay về màn hình chính" để quay về màn hình chính.</span>
+
+        <label for="playerName" class="info">Nhập tên của bạn:</label>
+        <input type="text" id="playerName" placeholder="Tên của bạn">
 
         <div class="btn-group">
             <button class="info-btn exit-btn">Thoát</button>
